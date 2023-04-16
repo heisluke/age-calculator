@@ -1,0 +1,201 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');*/
+
+
+html {
+    font-family: Poppins;
+    background-color: hsl(0, 0%, 94%);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    height: 95vh;
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 38px;
+    background-color: #ffffff;
+    border-radius: 32px 32px 128px 32px ;
+    min-width: 50em;
+}
+
+label {
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    display: block;
+    padding-bottom: 4px;
+    letter-spacing: 0.25em;
+}
+
+
+input[type=text] {
+    height: 42px;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 12px 24px;
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%); 
+    outline: none;
+}
+
+input[type=text]:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+    caret-color: hsl(259, 100%, 65%);
+}
+
+.form-line {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.form-line div {
+    padding-right: 24px;
+}
+
+.form-line label {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button-divider {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;    
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+
+h1 .convertio {
+    color: hsl(259, 100%, 65%);
+}
+
+h1 {
+    color: hsl(0, 0%, 8%);
+    font-size: 96px;
+    line-height: 40%;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+button {
+    border: none;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 200px;
+    padding: 24px;
+    cursor: pointer; 
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+p {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+
+/*media query quick fix for tablets*/
+
+@media (max-width: 830px) {
+    .main {
+        align-items: stretch;
+    }
+    .container {
+        min-width: 10em;
+    }
+
+    h1 {
+        font-size: 4.5em;
+    }
+
+    input[type=text] {
+        height: 28px;
+        font-size: 1em;
+        padding: 8px 12px;
+        width: 60px;
+        border-radius: 8px;
+        border: 1px solid hsl(0, 0%, 86%);
+        color: hsl(0, 0%, 8%);
+    }
+}
+/*end of tablet patch*/
+
+/*media queries for smaller screen*/
+
+@media (max-width: 500px) {
+
+    p {
+        color: hsl(0, 100%, 67%);
+        font-style: italic;
+        margin-top: 8px;
+        font-size: 10px;
+    }
+
+    button {
+        position: absolute;
+        left: 42%;
+        padding: 16px;
+        transition: 0.3s;
+    }
+
+    .main {
+        height: 90svh;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    
+
+    h1 {
+        font-size: 3em;
+    }
+
+    
+    
+    .form-line label {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .form-line {
+        justify-content: space-between;
+        flex-flow: wrap;
+    }
+
+    
+
+    .container {
+        padding: 38px 24px 24px 24px;
+        border-radius: 24px 24px 88px 24px ;
+        min-width: 10em;
+        min-height: 400px;
+
+    }
+
+    .button-divider {
+        margin: 42px auto;
+        padding: 24px 0;
+    }
+
+    
+}
