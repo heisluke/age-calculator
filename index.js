@@ -29,7 +29,7 @@ function ageCalc() {
         ghostStyler.innerHTML = "<style> .top-label { color: hsl(0, 100%, 67%);} input[type=text]{border: 1px solid hsl(0, 100%, 67%);}  </style>"
 
     } else if (day.value == 31 && (month.value == 4 || month.value == 6 || month.value == 9 || month.value == 11)) {
-        dayFormError.textContent = "Must be a valid day";
+        dayFormError.textContent = "It Must be a valid day";
         monthFormError.textContent = "Must be a valid month";
         yearFormError.textContent = "Must be in the past";
         ghostStyler.innerHTML = "<style> .top-label { color: hsl(0, 100%, 67%);} input[type=text]{border: 1px solid hsl(0, 100%, 67%);}  </style>"
